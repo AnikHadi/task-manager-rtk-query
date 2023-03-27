@@ -8,6 +8,7 @@ export const taskApi = apiSlice.injectEndpoints({
     }),
     getTask: builder.query({
       query: (id) => `/tasks/${id}`,
+      refetchOnFocus: true,
     }),
     addTask: builder.mutation({
       query: (data) => ({
@@ -63,8 +64,7 @@ export const taskApi = apiSlice.injectEndpoints({
         // optimistic cache update start
         const patchResult = dispatch(
           apiSlice.util.updateQueryData("getTasks", undefined, (draft) => {
-            const index = draft.findIndex((item) => item.id === arg.id);
-            draft[index] = task.data;
+            const index = draft.findIndex((item) => item.id === arg);
             draft.splice(index, 1);
           })
         );

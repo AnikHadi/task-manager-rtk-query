@@ -8,7 +8,7 @@ Redux Project Task Manager with RTK Query
 
 ## Documentation
 
-[Live Project](https://prismatic-croquembouche-24b0b3.netlify.app/)
+[Live Project](https://silver-kulfi-f75ece.netlify.app/)
 
 ## How to run
 
@@ -19,7 +19,7 @@ Please follow the below instructions to run this project in your machine:
 - Clone this repository -
 
 ```bash
-  git clone https://github.com/Learn-with-Sumit/batch-2---assignment-9---task-manager-with-rtk-query-HadiAnik
+  git clone https://github.com/HadiAnik/task-manager-rtk-query.git
 ```
 
 - Go to the cloned project directory
